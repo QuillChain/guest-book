@@ -5,7 +5,6 @@
   "license": "vincent",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "deploy": "yarn build && near deploy && gh-pages -d dist/  ",
     "build": "yarn build:contract && yarn build:web",
     "build:contract": "asb",
